@@ -1,0 +1,49 @@
+body, html {
+    background-image: url('');
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.top-frame {
+    background-color: #f8f8f8;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.left-frame {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.left-frame a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.right-frame {
+    flex: 1;
+    padding: 8px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color:aqua
+}

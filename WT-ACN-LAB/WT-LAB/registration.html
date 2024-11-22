@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .top-frame {
+            background-color:  #0ad3de;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-home img {
+            height: 50px;
+        }
+        .site-name-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .site-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .left-frame {
+            width: 100px;
+            background-color: #6681c6;
+            padding: 10px;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        .left-frame a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #000;
+        }
+        .right-frame {
+              background-color: #a0cff9;
+        }
+        .right-frame {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+                 
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <div class="top-frame">
+            <div class="logo-home">
+                <img src="C:\Web Developement\hotdocs\pngwing (2).png" alt="pngwing (2).png">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="site-name-nav">
+                <div class="site-name">Online Book Store</div>
+                <div class="nav-links">
+                    <a href="login.html">Login</a>
+                    <a href="registration.html">Registration</a>
+                    <a href="catalogue.html">Catalogue</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-frame">
+                <a href="catalogue.html?category=CSE">CSE</a>
+                <a href="catalogue.html?category=ECE">ECE</a>
+                <a href="catalogue.html?category=EEE">EEE</a>
+                <a href="catalogue.html?category=CIVIL">CIVIL</a>
+            </div>
+            <div class="right-frame">
+                <style>
+        
+        .registration-form {
+            background-color: #fff;
+            padding: 20px;
+            border: 10px solid #ddd;
+            border-radius: 50px;
+            width: 400px;
+            
+        }
+        .registration-form h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+    </style>
+
+<body>
+    <div class="registration-form">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail ID:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label>Sex:</label>
+                <label><input type="radio" name="sex" value="male"> Male</label>
+                <label><input type="radio" name="sex" value="female"> Female</label>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <select id="day" name="day">
+                    <option value="">Day</option>
+                    <!-- Add day options here -->
+                </select>
+                <select id="month" name="month">
+                    <option value="">Month</option>
+                    <!-- Add month options here -->
+                </select>
+                <select id="year" name="year">
+                    <option value="">Year</option>
+                    <!-- Add year options here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Languages Known:</label>
+                <label><input type="checkbox" name="languages" value="english"> English</label>
+                <label><input type="checkbox" name="languages" value="telugu"> Telugu</label>
+                <label><input type="checkbox" name="languages" value="hindi"> Hindi</label>
+                <label><input type="checkbox" name="languages" value="tamil"> Tamil</label>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+          
+</body>
+</head>
+</html>
+
